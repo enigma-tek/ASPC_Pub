@@ -165,7 +165,7 @@ function download_files {
             if (Test-Path -Path "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.ps1" -PathType Leaf){
 
             } else {
-            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/ASPC_Updater.ps1" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.exe"
+            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/ASPC_Updater.ps1" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.ps1"
             Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/versions.json" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Configs\Version\versions.json"
             }
             
@@ -481,3 +481,5 @@ Start-RunspaceTask $JobCleanupScript @([PSObject]@{ Name='Jobs' ; Variable=$Jobs
 
 
 $Window.ShowDialog()
+
+
