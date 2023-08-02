@@ -29,7 +29,7 @@ $Xaml = @"
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Welcome}" Margin="10,10,0,10" Width="575" Height="70" Name="Welcome_Text_Block" Background="#4a90e2" Foreground="#ffffff" Padding="0,10,0,0"/>
 
 <Button Content="Install" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="16,153,0,0" Foreground="#194d4a" BorderBrush="#194d4a" Height="30" FontSize="15" FontWeight="DemiBold" Background="#ffffff" Name="Install_Button"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="578" TextWrapping="Wrap" Margin="8.5,286.984375,0,0" Foreground="{Binding Output_textColor}" Text="{Binding Output}" Name="lkqy0jvm13nx0"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="578" TextWrapping="Wrap" Margin="8.5,286.984375,0,0" Foreground="{Binding Output_textColor}" Text="{Binding Output}" Name="lku8k2wt4toca"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Output" Margin="10,268,0,0"/>
 
 <Button Content="Uninstall" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="490,240,0,0" Foreground="#194d4a" BorderBrush="#194d4a" Height="30" FontSize="15" FontWeight="DemiBold" Background="#ffffff" Name="Uninstal_BTN"/>
@@ -162,7 +162,7 @@ function download_files {
             Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/ASPC_Configurator.ps1" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Configurator.ps1"
             }
             
-            if (Test-Path -Path "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.exe" -PathType Leaf){
+            if (Test-Path -Path "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.ps1" -PathType Leaf){
 
             } else {
             Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/ASPC_Updater.ps1" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.exe"
@@ -411,8 +411,8 @@ FillDataContext @("Welcome","Output","Output_textColor","uninstallAgree","keepCo
 
 $Window.DataContext = $DataContext
 Set-Binding -Target $Welcome_Text_Block -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 0 -Name "Welcome"  
-Set-Binding -Target $lkqy0jvm13nx0 -Property $([System.Windows.Controls.TextBox]::ForegroundProperty) -Index 2 -Name "Output_textColor"  
-Set-Binding -Target $lkqy0jvm13nx0 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 1 -Name "Output"  
+Set-Binding -Target $lku8k2wt4toca -Property $([System.Windows.Controls.TextBox]::ForegroundProperty) -Index 2 -Name "Output_textColor"  
+Set-Binding -Target $lku8k2wt4toca -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 1 -Name "Output"  
 
 
 
@@ -481,5 +481,3 @@ Start-RunspaceTask $JobCleanupScript @([PSObject]@{ Name='Jobs' ; Variable=$Jobs
 
 
 $Window.ShowDialog()
-
-
