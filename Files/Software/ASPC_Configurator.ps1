@@ -632,30 +632,32 @@ function openPFXFile([string] $initialDirectory){
 }
 
 function saveSPInformation {
+            $State.SP_Page_Output = ""
+            Start-Sleep -Seconds 2
         	$filepath = $Global:PFXfileName
         try {
-			Import-PfxCertificate -FilePath $filepath -CertStoreLocation 'Cert:\LocalMachine\My' -Password $GlobalPFXPASS -ErrorAction Stop
-			#Import-PfxCertificate -FilePath $filepath -CertStoreLocation 'Cert:\CurrentUser\My' -Password $GlobalPFXPASS -ErrorAction Stop
-            $State.SP_Page_Output = "Certificate Imported"
+			Import-PfxCertificate -FilePath $filepath -CertStoreLocation 'Cert:\LocalMachine\My' -Password $Global:PFXPASS -ErrorAction Stop
+			#Import-PfxCertificate -FilePath $filepath -CertStoreLocation 'Cert:\CurrentUser\My' -Password $Global:PFXPASS -ErrorAction Stop
+            $State.SP_Page_Output = "Certificate Imported."
             }
        catch {
-           $State.SP_Page_Output = "There was an issue importing the PFX"
+           $State.SP_Page_Output = "There was an issue importing the PFX."
             }
     
         $ASPCKeyData = Get-Content "C:\Program Files\Enigma-Tek\ASPC\Configs\Engine\ASPC_Eng.key"
         $Thumbprint = $State.Cert_Thumbprint | ConvertTo-SecureString -AsPlainText -Force
         $Thumbprint | ConvertFrom-SecureString -Key $ASPCKeyData | Out-File "C:\Program Files\Enigma-Tek\ASPC\Creds\spThumb.txt"
-        $State.SP_Page_Output += "Thumbprint has been encrypted and stored"
+        $State.SP_Page_Output += " Thumbprint has been encrypted and stored."
         
         $ASPCKeyData = Get-Content "C:\Program Files\Enigma-Tek\ASPC\Configs\Engine\ASPC_Eng.key"
         $AppID = $State.SP_AppID | ConvertTo-SecureString -AsPlainText -Force
         $AppID | ConvertFrom-SecureString -Key $ASPCKeyData | Out-File "C:\Program Files\Enigma-Tek\ASPC\Creds\spAppID.txt"
-        $State.SP_Page_Output += "Application ID has been encrypted and stored"
+        $State.SP_Page_Output += " Application ID has been encrypted and stored."
         
         $ASPCKeyData = Get-Content "C:\Program Files\Enigma-Tek\ASPC\Configs\Engine\ASPC_Eng.key"
         $TennantID = $State.SP_TennantID | ConvertTo-SecureString -AsPlainText -Force
         $TennantID | ConvertFrom-SecureString -Key $ASPCKeyData | Out-File "C:\Program Files\Enigma-Tek\ASPC\Creds\spTennantID.txt"
-        $State.SP_Page_Output += "Tenant ID has been encrypted and stored"
+        $State.SP_Page_Output += " Tenant ID has been encrypted and stored."
         
 }
 
