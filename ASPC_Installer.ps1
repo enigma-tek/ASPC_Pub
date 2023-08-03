@@ -166,9 +166,9 @@ function download_files {
 
             } else {
             Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/ASPC_Updater.ps1" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Software\ASPC_Updater.ps1"
-            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/versions.json" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Configs\Version\versions.json"
             }
-            
+            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/versions.json" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Configs\Version\versions.json"
+            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/Example_Alert_Def.json" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\Example_Alert_Def.json"
             
         $downloadFilesErrors = Write-output $Error
         $outputText = $outputText + "`nEngine, Configurator and Updater Files downloaded."
