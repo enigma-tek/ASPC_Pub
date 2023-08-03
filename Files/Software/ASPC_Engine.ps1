@@ -435,26 +435,21 @@ Function Mail_Handler_Primary {
                 $credential = New-Object System.Management.Automation.PSCredential ($Plainmailuser,$encPass)
                 
                 $Global:DefaultEmail = $Global:DefaultEmail.Split(",")
-                $Global:FinaltoEmails =@()
-                
-                foreach ($DefEm in $DefaultEmail) {
         
-                $DefEm = """$DefEm"""
-                $DefEm
-                $Global:FinaltoEmails += @($DefEm)
-            }
-            $Global:FinaltoEmails = $Global:FinaltoEmails-join(",")  
-                    
-        $mailParams =@{
-            SmtpServer          = 'smtp.office365.com'
-            UseSsl              = $true
-            Credential          = $credential
-            From                = $Plainmailuser
-            To                  = $Global:FinaltoEmails
-            Subject             = $Global:ReportName
-            Body                = $Global:report
+                
+                foreach ($DefEm in $Global:DefaultEmail) {
+        
+                $mailParams =@{
+                    SmtpServer          = 'smtp.office365.com'
+                    UseSsl              = $true
+                    Credential          = $credential
+                    From                = $Plainmailuser
+                    To                  = $DefEm
+                    Subject             = $Global:ReportName
+                    Body                = $Global:report
         }
     Send-MailMessage @mailParams -BodyAsHtml
+    }        
     Write-Output $Error
     EngineCleanup
 }
@@ -472,27 +467,22 @@ Function Mail_Handler_Secondary {
                 $credential = New-Object System.Management.Automation.PSCredential ($Plainmailuser,$encPass)
         
                 $Global:ExternalMailAddr = $Global:ExternalMailAddr.Split(",")
-                $Global:FinalExtEmails =@()
                 
-                foreach ($DefEm in $Global:ExternalMailAddr) {
-        
-                $DefEm = """$DefEm"""
-                $DefEm
-                $Global:FinalExtEmails  += @($DefEm)
-            }
-            $Global:FinalExtEmails  = $Global:FinalExtEmails -join(",")  
+                foreach ($DefEmX in $Global:ExternalMailAddr) {    
 
-           $mailParamsXmail =@{
-            SmtpServer          = 'smtp.office365.com'
-            UseSsl              = $true
-            Credential          = $credential
-            From                = $Plainmailuser
-            To                  = $Global:FinalExtEmails
-            Subject             = 'CSS - Expiring Service Principal Information'
-            Body                = $Global:ExternalMailNote
+                    $mailParamsXmail =@{
+                        SmtpServer          = 'smtp.office365.com'
+                        UseSsl              = $true
+                        Credential          = $credential
+                        From                = $Plainmailuser
+                        To                  = $DefEmX
+                        Subject             = 'CSS - Expiring Service Principal Information'
+                        Body                = $Global:ExternalMailNote
+                    }
+        
+                Send-MailMessage @mailParamsXmail
+                Write-Output $Error
         }
-        Write-Output $Error
-    Send-MailMessage @mailParamsXmail
 }
 
 Function EngineCleanup {
