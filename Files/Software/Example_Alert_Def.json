@@ -1,0 +1,9 @@
+{
+    "SPNotes":  "Leave this Alert Definition in place until you have one of your own built. The Engine requires atleast one Defintion to run.",
+    "ExternalAlertMailAddr":  "",
+    "ExternalAlertMailNote":  "",
+    "LastWriteUser":  "nobody",
+    "LastWriteTime":  "never",
+    "SPNamePortal":  "Example Alert Definition"
+
+}
