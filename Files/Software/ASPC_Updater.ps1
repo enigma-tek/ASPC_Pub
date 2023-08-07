@@ -55,12 +55,12 @@ Function ASPC_Software_Download {
             Invoke-WebRequest -Uri "https://raw.githubusercontent.com/enigma-tek/ASPC_Pub/main/Files/Software/versions.json" -OutFile "C:\Program Files\Enigma-Tek\ASPC\Configs\Version\versions.json"
             Write-Host -ForegroundColor Green "Versions File Downloaded..."
             Start-Sleep -Seconds 4
-            Updater_Exit_Scrip
+            Updater_Exit_Script
             
             
             } catch {
              Write-Host -ForegroundColor Red "There was an issue removing the old files. Closing the Updater. Please review log file"
-             Updater_Exit_Scrip
+             Updater_Exit_Script
             }
 }
 
