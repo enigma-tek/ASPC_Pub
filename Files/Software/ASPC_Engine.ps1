@@ -469,7 +469,10 @@ Function Mail_Handler_Secondary {
                 $Global:ExternalMailAddr = $Global:ExternalMailAddr.Split(",")
                 
                 foreach ($DefEmX in $Global:ExternalMailAddr) {    
-
+					if ($DefEmX -eq $null) {
+						Write-output "No email address"
+					} else {
+					
                     $mailParamsXmail =@{
                         SmtpServer          = 'smtp.office365.com'
                         UseSsl              = $true
@@ -482,6 +485,7 @@ Function Mail_Handler_Secondary {
         
                 Send-MailMessage @mailParamsXmail
                 Write-Output $Error
+			}
         }
 }
 
