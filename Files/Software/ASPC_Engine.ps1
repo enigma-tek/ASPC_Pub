@@ -469,8 +469,8 @@ Function Mail_Handler_Secondary {
                 $Global:ExternalMailAddr = $Global:ExternalMailAddr.Split(",")
                 
                 foreach ($DefEmX in $Global:ExternalMailAddr) {    
-					if ($DefEmX -eq $null) {
-						Write-output "No email address"
+					if (!$DefEmX) {
+						Write-output "No external email address"
 					} else {
 					
                     $mailParamsXmail =@{
