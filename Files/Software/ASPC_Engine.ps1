@@ -213,9 +213,13 @@ Function Check_JSON_Notes_Expiring {
                 foreach($CompName in $CompareNames) {
                     If($CompName.SideIndicator -eq "==") {
                         $SPFinName = $CompName.InputObject
-                        $SPFinNameInfo = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinName.json" | ConvertFrom-Json -Verbose
+                        $SPFinNameInfo = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\hmetrix-safhir-prod-client.json" | ConvertFrom-Json -Verbose
                         $SPNotes = $SPFinNameInfo.SPNotes
+						$InternalNotes = $SPFinNameInfo.IntOwner
+						$ExternalNotes = $SPFinNameInfo.ExtOwner
                             $AlrtDef | Add-Member -NotePropertyName Notes -NotePropertyValue $SPNotes -Force
+							$AlrtDef | Add-Member -NotePropertyName Internal -NotePropertyValue $InternalNotes -Force
+							$AlrtDef | Add-Member -NotePropertyName External -NotePropertyValue $ExternalNotes -Force
                             $Global:ExpireKeysCertsSoon += @($AlrtDef)
                     }
               }
@@ -277,7 +281,7 @@ Function Primary_Report {
     Write-Output "running primary report"
     
     $KeysThatExpireSoon = $Global:ExpireKeysCertsSoon | Sort-Object DisplayName -Unique
-    $KeysThatExpireSoon | Select-Object DisplayName,DaysToExpire,StartDate,ExpiryDate,KeyID,Notes
+    $KeysThatExpireSoon | Select-Object DisplayName,DaysToExpire,StartDate,ExpiryDate,KeyID,Notes,Internal,External
   
   foreach($keys in $KeysThatExpireSoon){
 $DN = $Keys.DisplayName
@@ -286,6 +290,8 @@ $SD = $Keys.StartDate
 $EXD = $Keys.ExpiryDate
 $KID = $Keys.KeyID
 $NOTES = $Keys.Notes
+$IntOwn = $Keys.Internal
+$ExtOwn = $Keys.External
 
 $dataRow = "
 </tr>
@@ -295,6 +301,8 @@ $dataRow = "
 <td><center>$EXD</center></td>
 <td>$KID</td>
 <td>$NOTES</td>
+<td>$IntOwn</td>
+<td>$ExtOwn</td>
 </tr>
 "
 
@@ -319,6 +327,8 @@ TD{border: 1px solid black; padding: 5px; }
 <th>Expiry Date</th>
 <th>Key ID</th>
 <th>Notes</th>
+<th>Internal Owners</th>
+<th>External Owners</th>
 </tr>
 $dataforreport
 </table>
@@ -332,10 +342,10 @@ Function Primary_Report_With_Expired{
     Write-Output "Running primary with expired"
 
     $KeysThatExpireSoon = $Global:ExpireKeysCertsSoon | Sort-Object DisplayName -Unique
-    $KeysThatExpireSoon | Select-Object DisplayName,DaysToExpire,StartDate,ExpiryDate,KeyID,Notes
+    $KeysThatExpireSoon | Select-Object DisplayName,DaysToExpire,StartDate,ExpiryDate,KeyID,Notes,Internal,External
 
     $KeysThatExpired = $Global:ExpireKeysCertsAlready | Sort-Object ExpiredDaysAgo -Unique
-    $KeysThatExpired | Select-Object DisplayName,ExpiredDaysAgo,ExpiryDate,KeyID,Notes
+    $KeysThatExpired | Select-Object DisplayName,ExpiredDaysAgo,ExpiryDate,KeyID,Notes,Internal,External
   
   foreach($keys in $KeysThatExpireSoon)
 {
@@ -345,6 +355,8 @@ $SD = $Keys.StartDate
 $EXD = $Keys.ExpiryDate
 $KID = $Keys.KeyID
 $NOTES = $Keys.Notes
+$IntOwn = $Keys.Internal
+$ExtOwn = $Keys.External
 
 $dataRow = "
 </tr>
@@ -354,6 +366,8 @@ $dataRow = "
 <td><center>$EXD</center></td>
 <td>$KID</td>
 <td>$NOTES</td>
+<td>$IntOwn</td>
+<td>$ExtOwn</td>
 </tr>
 "
 
@@ -368,6 +382,8 @@ $XDAX = $KeysEX.ExpiredDaysAgo
 $EXDX = $KeysEX.ExpiryDate
 $KIDX = $KeysEX.KeyID
 $NOTESX = $KeysEX.Notes
+$IntOwn = $Keys.Internal
+$ExtOwn = $Keys.External
 
 $dataRowEX = "
 </tr>
@@ -376,6 +392,8 @@ $dataRowEX = "
 <td><center>$EXDX</center></td>
 <td>$KIDX</td>
 <td>$NOTESX</td>
+<td>$IntOwn</td>
+<td>$ExtOwn</td>
 </tr>
 "
 
@@ -401,6 +419,8 @@ TD{border: 1px solid black; padding: 5px; }
 <th>Expiry Date</th>
 <th>Key ID</th>
 <th>Notes</th>
+<th>Internal Owners</th>
+<th>External Owners</th>
 </tr>
 $dataforreport
 </table>
@@ -413,6 +433,8 @@ $dataforreport
 <th>Expiry Date</th>
 <th>Key ID</th>
 <th>Notes</th>
+<th>Internal Owners</th>
+<th>External Owners</th>
 </tr>
 $dataforreportEX
 </table>
