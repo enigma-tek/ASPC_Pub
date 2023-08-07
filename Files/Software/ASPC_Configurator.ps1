@@ -73,18 +73,18 @@ $Xaml = @"
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="865" TextWrapping="Wrap" Margin="10,200,0,0" Text="{Binding SpNote}" BorderBrush="#4a90e2" Name="ll109drvg88ym"/>
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="532" TextWrapping="Wrap" Margin="10,337,0,0" Text="{Binding AlrtDefXMail}" Padding="2,6,0,0" BorderBrush="#4a90e2" Name="ll109drvzqy0b"/>
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="866" TextWrapping="Wrap" Margin="10,390,0,0" Text="{Binding AlrtDefXNote}" BorderBrush="#4a90e2" Name="ll109drv8yc84"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Service Principal Name. This is the name as seen in the Azure portal and must match exactly." Margin="10,125,0,0" Width="522" Height="22"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Note. This should be any information for internal teams about the Key/Certificate that is expiring." Margin="10,181,0,0" Width="586" Height="23"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Email Address. Alert external parties. Must be comma seperated addresses if more than one. (first@company.com,second@company.com)" Margin="11,317,0,0" Width="863" Height="15"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Note. A message to external parties. DO NOT include any sensitive information here!" Margin="11,372,0,0" Width="507" Height="20"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Service Principal Name. This is the name as seen in the Azure portal and must match exactly." Margin="10,125,0,0" Width="522" Height="22" FontStyle="Italic" FontWeight="SemiBold"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Note. This should be any information for internal teams about the Key/Certificate that is expiring." Margin="10,181,0,0" Width="586" Height="23" FontStyle="Italic" FontWeight="SemiBold"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Email Address. Alert external parties. Must be comma seperated addresses if more than one. (first@company.com,second@company.com)" Margin="11,317,0,0" Width="863" Height="15" FontWeight="SemiBold" FontStyle="Italic"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Note. A message to external parties. DO NOT include any sensitive information here!" Margin="11,372,0,0" Width="507" Height="20" FontStyle="Italic" FontWeight="SemiBold"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Alrt_Def_Output}" Margin="600,80,0,0" Width="227" Height="103" Background="#eeebeb" Name="ll109drwtxu88"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Output" Margin="560,73,0,0" Width="62" Height="18"/>
 <Button Content="Delete Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="365,86,0,0" FontStyle="Italic" Name="Delete_Def_Button"/>
 <Button Content="Clear Fields" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="247,86,0,0" FontStyle="Italic" Name="ll109drw15m29"/>
 <Button Content="Save Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="129,86,0,0" FontStyle="Italic" Name="ll109drwuza2v"/>
 <Button Content="Load Alert Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="10,86,0,0" FontStyle="Italic" Name="ll109drw7h7g3"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Owners - Department" Margin="12,262,0,0"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Owners - Company and Email address" Margin="421,263,0,0"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Owners - Department" Margin="12,262,0,0" FontStyle="Italic" FontWeight="SemiBold"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Owners - Company and Email address" Margin="421,263,0,0" FontStyle="Italic" FontWeight="SemiBold"/>
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="395" TextWrapping="Wrap" Margin="12,280,0,0" BorderBrush="#4a90e2" Text="{Binding IntOwnerNote}" Name="ll109drws677h"/>
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="453" TextWrapping="Wrap" Margin="420,281,0,0" BorderBrush="#4a90e2" Text="{Binding ExtOwnerNote}" Name="ll109drwvgvr5"/>
 </Grid>
@@ -1083,7 +1083,7 @@ function FillDataContext($props){
 $DataObject =  ConvertFrom-Json @"
 
 {
-    "tabIndex" : "0",
+    "tabIndex" : "1",
     "EngConfDefaultEmail" : "",
     "EngConfExcludeExpired" : "",
     "ExcludeExpiredCheckBox" : "",
