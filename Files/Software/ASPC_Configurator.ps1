@@ -69,24 +69,24 @@ $Xaml = @"
 <Border BorderBrush="#000000" BorderThickness="1" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="882" Margin="0.5,0.03125,0,0" Background="#717fa8">
 <TextBlock TextWrapping="Wrap" Text="Alert Definition Page. Press the load button to load an existing definition and view or change (REMEMBER TO SAVE CHANGES!!). Clear Fields button clears the fields and the Delete Definitions button to view and delete any existing defintions. To add a new defintion: Fill in the blank fields and click save. If you opened a Definition, click the Clear Fields button and then proceed to fill in the blank fields" Foreground="#ffffff" Margin="25,4,24,5"/>
 </Border>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="534" TextWrapping="Wrap" Margin="9,145,0,0" Text="{Binding SPName}" Padding="2,6,0,0" BorderBrush="#4a90e2" Name="ll109drv9uuoy"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="865" TextWrapping="Wrap" Margin="10,200,0,0" Text="{Binding SpNote}" BorderBrush="#4a90e2" Name="ll109drvg88ym"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="532" TextWrapping="Wrap" Margin="10,337,0,0" Text="{Binding AlrtDefXMail}" Padding="2,6,0,0" BorderBrush="#4a90e2" Name="ll109drvzqy0b"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="866" TextWrapping="Wrap" Margin="10,390,0,0" Text="{Binding AlrtDefXNote}" BorderBrush="#4a90e2" Name="ll109drv8yc84"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="534" TextWrapping="Wrap" Margin="9,145,0,0" Text="{Binding SPName}" Padding="2,6,0,0" BorderBrush="#4a90e2" Name="lqdz6538i3o5f"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="865" TextWrapping="Wrap" Margin="10,200,0,0" Text="{Binding SpNote}" BorderBrush="#4a90e2" Name="lqdz6538zvwox"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="532" TextWrapping="Wrap" Margin="10,337,0,0" Text="{Binding AlrtDefXMail}" Padding="2,6,0,0" BorderBrush="#4a90e2" Name="lqdz6538a81wr"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="866" TextWrapping="Wrap" Margin="10,390,0,0" Text="{Binding AlrtDefXNote}" BorderBrush="#4a90e2" Name="lqdz6538u0xsb"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Service Principal Name. This is the name as seen in the Azure portal and must match exactly." Margin="10,125,0,0" Width="522" Height="22" FontStyle="Italic" FontWeight="SemiBold"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Note. This should be any information for internal teams about the Key/Certificate that is expiring." Margin="10,181,0,0" Width="586" Height="23" FontStyle="Italic" FontWeight="SemiBold"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Email Address. Alert external parties. Must be comma seperated addresses if more than one. (first@company.com,second@company.com)" Margin="11,317,0,0" Width="863" Height="15" FontWeight="SemiBold" FontStyle="Italic"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Note. A message to external parties. DO NOT include any sensitive information here!" Margin="11,372,0,0" Width="507" Height="20" FontStyle="Italic" FontWeight="SemiBold"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Alrt_Def_Output}" Margin="600,80,0,0" Width="227" Height="103" Background="#eeebeb" Name="ll109drwtxu88"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Alrt_Def_Output}" Margin="600,80,0,0" Width="227" Height="103" Background="#eeebeb" Name="lqdz653839nyj"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Output" Margin="560,73,0,0" Width="62" Height="18"/>
 <Button Content="Delete Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="365,86,0,0" FontStyle="Italic" Name="Delete_Def_Button"/>
-<Button Content="Clear Fields" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="247,86,0,0" FontStyle="Italic" Name="ll109drw15m29"/>
-<Button Content="Save Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="129,86,0,0" FontStyle="Italic" Name="ll109drwuza2v"/>
-<Button Content="Load Alert Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="10,86,0,0" FontStyle="Italic" Name="ll109drw7h7g3"/>
+<Button Content="Clear Fields" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="247,86,0,0" FontStyle="Italic" Name="lqdz6538596bc"/>
+<Button Content="Save Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="129,86,0,0" FontStyle="Italic" Name="lqdz6538607uy"/>
+<Button Content="Load Alert Def" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="10,86,0,0" FontStyle="Italic" Name="lqdz6538y1xjk"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Internal Owners - Department" Margin="12,262,0,0" FontStyle="Italic" FontWeight="SemiBold"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="External Owners - Company and Email address" Margin="421,263,0,0" FontStyle="Italic" FontWeight="SemiBold"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="395" TextWrapping="Wrap" Margin="12,280,0,0" BorderBrush="#4a90e2" Text="{Binding IntOwnerNote}" Name="ll109drws677h"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="453" TextWrapping="Wrap" Margin="420,281,0,0" BorderBrush="#4a90e2" Text="{Binding ExtOwnerNote}" Name="ll109drwvgvr5"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="395" TextWrapping="Wrap" Margin="12,280,0,0" BorderBrush="#4a90e2" Text="{Binding IntOwnerNote}" Name="lqdz6538ea67r"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="453" TextWrapping="Wrap" Margin="420,281,0,0" BorderBrush="#4a90e2" Text="{Binding ExtOwnerNote}" Name="lqdz6538hsdz1"/>
 </Grid>
 </TabItem><TabItem Header="Extra" Visibility="Collapsed"><Grid Background="#ffffff" Name="ExtraGrid">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Extra" Margin="37.5,18.984375,0,0"/>
@@ -95,9 +95,9 @@ $Xaml = @"
 <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="884" Margin="-0.15625,-1.015625,0,0" Name="EningConf_Boarder" Background="#717fa8">
 <TextBlock TextWrapping="Wrap" Text="Engine Configuration page allows you to set the defaults used when the engine runs. The current configuration will load when the page loads. After making any changes to the configuration, you must hit the SAVE button else your changes will not save." Name="EngConf_Txt" Foreground="#ffffff" Width="841" Height="39" Margin="26,5,17,4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 </Border>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="489" TextWrapping="Wrap" Margin="25,114,0,0" Text="{Binding EngConfDefaultEmail}" Padding="2,2,0,0" BorderBrush="#4a90e2" Name="ll109drwjb0l3"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="50" TextWrapping="Wrap" Margin="25,302,0,0" Text="{Binding EngConfExpireWithin}" Padding="15,5,0,0" BorderBrush="#4a90e2" Name="ll109drw110lp"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="490" TextWrapping="Wrap" Margin="25,209,0,0" Text="{Binding EngConfReportName}" Padding="2,7,0,0" BorderBrush="#4a90e2" Name="ll109drxo3hdg"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="489" TextWrapping="Wrap" Margin="25,114,0,0" Text="{Binding EngConfDefaultEmail}" Padding="2,2,0,0" BorderBrush="#4a90e2" Name="lqdz6538zeufi"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="50" TextWrapping="Wrap" Margin="25,302,0,0" Text="{Binding EngConfExpireWithin}" Padding="15,5,0,0" BorderBrush="#4a90e2" Name="lqdz6538vh6tn"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="490" TextWrapping="Wrap" Margin="25,209,0,0" Text="{Binding EngConfReportName}" Padding="2,7,0,0" BorderBrush="#4a90e2" Name="lqdz6538wq570"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Primary report email address. You can add more than one address here for your daily report, addresses must be comma seperated. (Eg. add1@company.com,add2@company.com)" Margin="27,72,0,0" Width="536" Height="41"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Report Name. This is the subject name on your daily report email. Default is ASPC Key / Certificate Expiring Report." Margin="27,166,0,0" Width="485" Height="39"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Numer of days out to Expiration. This is the number of days out from today that it looks to add to the report. This number has to be between 1-90. Default is 30." Margin="28,261,0,0" Width="486" Height="38"/>
@@ -107,9 +107,9 @@ $Xaml = @"
 <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FFF4F4F5" Stroke="Black" Height="2" Width="343" Margin="536.5,295.98400000000004,0,0" OpacityMask="#000000"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="YOU MUST CLICK SAVE!! If you dont click the save button, any changes made will be removed if you navigate off this page." Margin="540.5,76.984375,0,0" Width="339" Height="45"/>
 <Button Content="SAVE Eng Conf" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" Margin="642,145,0,0" FontStyle="Italic" Name="eng_conf_save_button"/>
-<CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="Exclude expired (checked = YES / un-checked = NO)" Margin="25.5,398.46875,0,0" IsChecked="{Binding ExcludeExpiredCheckBox}" BorderBrush="#4a90e2" Name="ll109drx87lfm"/>
+<CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="Exclude expired (checked = YES / un-checked = NO)" Margin="25.5,398.46875,0,0" IsChecked="{Binding ExcludeExpiredCheckBox}" BorderBrush="#4a90e2" Name="lqdz6538eu0an"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Eng_Save_Output}" Margin="541.5,209.984375,0,0" Name="Eng_Conf_Save_output" Width="338" Height="74"/>
-<Button Content="Test engine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Margin="614,407,0,0" Height="30" Foreground="#4a4a4a" FontSize="016" FontStyle="Italic" FontWeight="ExtraBold" Name="ll109drxvcne6"/>
+<Button Content="Test engine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Margin="614,407,0,0" Height="30" Foreground="#4a4a4a" FontSize="016" FontStyle="Italic" FontWeight="ExtraBold" Name="lqdz65381fl8d"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="If you have created Credentials and the Task then click the button below to run a test on the engine. If you dont recieve your email within a few minutes, then please check the Engine log files for errors." Margin="561.5,313.328125,0,0" Width="307" Height="84"/>
 </Grid></TabItem><TabItem Header="Creds" Visibility="Collapsed"><Grid Background="#ffffff" Name="CredsGrid" Margin="-1,1,1,-1">
 
@@ -133,7 +133,7 @@ $Xaml = @"
 
 
 
-<TabControl SelectedIndex="{Binding CredsTabIndex}" Name="ll109drx5o4wv"><TabItem Header="Instructions"><Grid Background="#ffffff" Margin="0,2,0,-2">
+<TabControl SelectedIndex="{Binding CredsTabIndex}" Name="lqdz6538ui0nq"><TabItem Header="Instructions"><Grid Background="#ffffff" Margin="0,2,0,-2">
 
 
 
@@ -152,38 +152,38 @@ $Xaml = @"
 
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Below is the input for the Service Principal / App Registration that you created along with the certificate that you uploaded to it. Fill in the fields below with the information that you copied out of the App Registration when you created it along with the Thumbprint of the certificate. Click the PFX button to point to the PFX file and then press the Get Pass button to input its password securely. Save when done." Margin="17,1,0,0" Width="840" Height="46" Foreground="#ffffff" FontSize="12"/>
 </Border>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="400" TextWrapping="Wrap" Margin="3,154,0,0" BorderBrush="#4a90e2" Text="{Binding SP_AppID}" Name="ll109drxu9xd9"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="401" TextWrapping="Wrap" Margin="2,219,0,0" BorderBrush="#4a90e2" Text="{Binding SP_TennantID}" Name="ll109drx2mms0"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="397" TextWrapping="Wrap" Margin="3,282,0,0" BorderBrush="#4a90e2" Text="{Binding Cert_Thumbprint}" Name="ll109drx0ffci"/>
-<Button Content="PFX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="477,139,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109drx3kdlu"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="400" TextWrapping="Wrap" Margin="3,154,0,0" BorderBrush="#4a90e2" Text="{Binding SP_AppID}" Name="lqdz6538mgwwn"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="401" TextWrapping="Wrap" Margin="2,219,0,0" BorderBrush="#4a90e2" Text="{Binding SP_TennantID}" Name="lqdz6538ncrbo"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="397" TextWrapping="Wrap" Margin="3,282,0,0" BorderBrush="#4a90e2" Text="{Binding Cert_Thumbprint}" Name="lqdz65388pieb"/>
+<Button Content="PFX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="477,139,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6538yvw1t"/>
 
-<Button Content="SAVE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="442,364,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109dryxo4dl"/>
+<Button Content="SAVE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="442,364,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6538hjmpc"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Directory (tenant) ID" Margin="5,198,0,0" Width="129" Height="23"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Cert Thumbprint" Margin="5,263,0,0" Width="99" Height="20"/>
 <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FFF4F4F5" Stroke="Black" Height="273" Width="3" Margin="442.5,72.031,0,0"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Fill in the fields below with the information from the App registration you created in your Azure tenant." Margin="4.5,70.03125,0,0" Width="422" Height="51"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Upload the PFX version of the certificate that you used when setting up the App registration in your Azure tenant." Margin="453,70,0,0" Width="403" Height="54"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding PFX_Location}" Margin="477,178,0,0" Width="348" Height="58" Background="#e5e4eb" Name="ll109drycillc"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding PFX_Location}" Margin="477,178,0,0" Width="348" Height="58" Background="#e5e4eb" Name="lqdz6538tagm3"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="PFX Password" Margin="480,253,0,0" Width="99" Height="21"/>
 <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FFF4F4F5" Stroke="Black" Height="4" Width="886" Margin="-13.5,348.031,0,0"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Once the fields above are complete and the PFX has been choosen, click &quot;Save&quot;" Margin="11,361,0,0" Width="439" Height="34"/>
 
 
 
-<Button Content="Get Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="484.5,283.640625,0,0" Name="ll109dry6pwmc"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="346" TextWrapping="Wrap" Margin="524.84375,359.578125,0,0" Text="{Binding SP_Page_Output}" Name="ll109dry18853"/>
+<Button Content="Get Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="484.5,283.640625,0,0" Name="lqdz65386ksn8"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="346" TextWrapping="Wrap" Margin="524.84375,359.578125,0,0" Text="{Binding SP_Page_Output}" Name="lqdz6538nvblg"/>
 </Grid></TabItem><TabItem Header="Email account"><Grid Background="#ffffff" Margin="0,-1,0,1">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Email account (and from address)" Margin="73,77,0,0"/>
-<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="227" TextWrapping="Wrap" Margin="49,98,0,0" Text="{Binding EmailAddFrom}" Name="ll109drypcuax"/>
+<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="227" TextWrapping="Wrap" Margin="49,98,0,0" Text="{Binding EmailAddFrom}" Name="lqdz6538ewjc6"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Password - (push the get password button)" Margin="51,144,0,0" Width="241" Height="20"/>
-<Button Content="Get Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="104,170,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109dry6v5sy"/>
+<Button Content="Get Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="104,170,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6538625bd"/>
 <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="857" Margin="4,3,0,0" Background="#717fa8">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Email account test and save. Input the account you will use to send email from, click the get password button to input its password and then put in a test send to address and press the Test Account button. If you get an email, then go ahead and hit the save button to save your credentials." Margin="7,4,0,0" Width="840" Height="45" Foreground="#ffffff"/>
 </Border>
 <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FFF4F4F5" Stroke="Black" Height="328" Width="12" Margin="357.844,70.73400000000001,0,0"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Currently this utility only supports sending mail through Office 365. We may look into adding other account types at a later date. You dont need to enter any of the SMTP info as we are autofilling it in. Please note again that this needs to be an APP Password on the account, not the login password and if you have conditional access policies or any 2fa/MFA policies they will need to be worked around (that is outside the scope of this utility)" Margin="385.84375,73.734375,0,0" Width="475" Height="119"/>
-<Button Content="Test Account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Margin="106,278,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109dryebh3w"/>
-<Button Content="Save Account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="103,356,0,0" Height="28" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109drynpchc"/>
+<Button Content="Test Account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Margin="106,278,0,0" Height="30" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6538dflgy"/>
+<Button Content="Save Account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="103,356,0,0" Height="28" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6538lly1e"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Put in a test Email address to send to and then hit Test Account" Margin="1,221,0,0" Width="346" Height="20"/>
 <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="227" TextWrapping="Wrap" Margin="51,242,0,0" Name="Test_Address" Text="{Binding TestEmailAdd}"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="If you received the Test email then click save below." Margin="29,331,0,0" Width="300" Height="18"/>
@@ -194,17 +194,17 @@ $Xaml = @"
 </Grid>
 </TabItem><TabItem Header="Tasks" Visibility="Collapsed"><Grid Background="#ffffff" Name="TasksGrid" Margin="0,-1,0,1">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Scheduled Task Name: ASPC_Engine_Run (this cannot be altered)" Margin="60,82,0,0" Width="400" Height="24"/>
-<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="56,178,0,0" ItemsSource="{Binding HourComboBox}" SelectedValue="{Binding SelectedHour}" Name="ll109drycmcas"/>
-<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="174,178,0,0" SelectedValue="{Binding SelectedTOD}" ItemsSource="{Binding HourAMPM}" Name="ll109drylftoy"/>
+<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="56,178,0,0" ItemsSource="{Binding HourComboBox}" SelectedValue="{Binding SelectedHour}" Name="lqdz6539zcir2"/>
+<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="174,178,0,0" SelectedValue="{Binding SelectedTOD}" ItemsSource="{Binding HourAMPM}" Name="lqdz6539laahl"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Choose Time of Day, AM or PM and &quot;Daily&quot;, &quot;Work Week&quot; (Mon-Fri) or a &quot;specific day of the week&quot;" Margin="19,107,0,0" Width="479" Height="30"/>
-<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="292,178,0,0" ItemsSource="{Binding RunDay}" SelectedValue="{Binding SelectedRunDay}" Name="ll109dryt7xcd"/>
-<Button Content="Create / Update Task" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="177,290,0,0" Height="25" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="ll109drzckk1s"/>
+<ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="292,178,0,0" ItemsSource="{Binding RunDay}" SelectedValue="{Binding SelectedRunDay}" Name="lqdz6539f2zzy"/>
+<Button Content="Create / Update Task" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="177,290,0,0" Height="25" Foreground="#194d4a" BorderBrush="#194d4a" FontSize="15" FontWeight="Bold" Background="#ffffff" FontStyle="Italic" Name="lqdz6539fetvn"/>
 <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="877" Margin="4,3,0,0" Background="#717fa8">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text=" Scheduled Task. Choose a Time, AM or PM and which days you would like to recieve your report. Daily is everyday, Work week is Mon-Fri Or choose a specific day to have it run. Push the Create /Update Task button. It will show the settings in the output pane. It will also re-load the settings evertime you open the Sch Tasks window." Margin="10,1,0,0" Width="862" Height="47" Foreground="#ffffff"/>
 </Border>
 <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FFF4F4F5" Stroke="Black" Height="385" Width="7" Margin="506.5,68.984375,0,0"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Output" Margin="519.5,71.03125,0,0" Width="69" Height="17"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Tasks_Output}" Margin="518.5,94.03125,0,0" Width="363" Height="280" Background="#e5e4eb" Name="ll109drzzbkrk"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Tasks_Output}" Margin="518.5,94.03125,0,0" Width="363" Height="280" Background="#e5e4eb" Name="lqdz6539kygzj"/>
 
 
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Time" Margin="57,162,0,0"/>
@@ -215,10 +215,10 @@ $Xaml = @"
 </TabItem><TabItem Header="Update" Visibility="Collapsed"><Grid Background="#ffffff" Name="UpdateGrid" Margin="1,0,-1,0">
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Installed Configurator Version" Margin="199,86,0,0" Width="176" Height="22"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Configurator_Ver}" Margin="248,112,0,0" Width="54" Height="20" Background="#eef3e9" Name="InstalledVersionConfig" Padding="6,2,0,0"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding AvailWebConfVer}" Margin="247,177,0,0" Width="54" Height="20" Background="#eef3e9" Padding="6,2,0,0" Name="ll109drzaoj7v"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Engine_Ver}" Margin="531,111,0,0" Background="#eef3e9" Width="54" Height="20" Padding="6,2,0,0" Name="ll109drz5e0t1"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding AvailWebEngVer}" Margin="533,178,0,0" Width="54" Height="20" Background="#eef3e9" Padding="6,2,0,0" Name="ll109drzszl76"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Update_Output}" Margin="81,6,0,0" Width="710" Height="45" Background="{Binding UpdateHeaderColor}" Name="ll109drzb4dul"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding AvailWebConfVer}" Margin="247,177,0,0" Width="54" Height="20" Background="#eef3e9" Padding="6,2,0,0" Name="lqdz6539t91vh"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Engine_Ver}" Margin="531,111,0,0" Background="#eef3e9" Width="54" Height="20" Padding="6,2,0,0" Name="lqdz6539tbccx"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding AvailWebEngVer}" Margin="533,178,0,0" Width="54" Height="20" Background="#eef3e9" Padding="6,2,0,0" Name="lqdz65390e8dx"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Update_Output}" Margin="81,6,0,0" Width="710" Height="45" Background="{Binding UpdateHeaderColor}" Name="lqdz6539o3fsi"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Available Configurator Version" Margin="195,151,0,0" Width="181" Height="23"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Installed Engine Version" Margin="494,88,0,0" Width="128" Height="23"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Available Engine Version" Margin="492,153,0,0" Width="130" Height="22"/>
@@ -230,8 +230,8 @@ $Xaml = @"
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="ASPC written by Enigma-Tek" Margin="17,36,0,0" Width="378" Height="18"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Problems/Bugs, feedback or requests please email enigma-tek@outlook.com" Margin="17,56,0,0" Width="555" Height="29"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="Github Project and Documentation (see Wiki) https://github.com/enigma-tek/ASPC_Pub" Margin="17,77,0,0" Width="531" Height="21"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Configurator_Ver}" Margin="171,118,0,0" Background="#edebf3" Width="58" Height="19" Padding="5,0,0,0" Name="ll109drzhq8pn"/>
-<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Engine_Ver}" Margin="141,148,0,0" Width="58" Height="19" Background="#edebf3" Padding="5,0,0,0" Name="ll109drzu2qfy"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Configurator_Ver}" Margin="171,118,0,0" Background="#edebf3" Width="58" Height="19" Padding="5,0,0,0" Name="lqdz65396yoyy"/>
+<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Engine_Ver}" Margin="141,148,0,0" Width="58" Height="19" Background="#edebf3" Padding="5,0,0,0" Name="lqdz6539wmb4w"/>
 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="ABOUT" Margin="15,6,0,0" Width="86" Height="25" FontSize="017" FontFamily="Sitka Small"/>
 </Grid></TabItem></TabControl>
 </Grid>
@@ -1029,23 +1029,24 @@ $ParentTabControl.Add_Loaded({openUpdatePage $this $_})
 $AboutBTN.Add_Click({AboutBTNFunk $this $_})
 $AlrtDefGrid.Add_Loaded({alrtDef_Page_Load $this $_})
 $Delete_Def_Button.Add_Click({alrtDef_Delete $this $_})
-$ll109drw15m29.Add_Click({alrtDef_Clear_Entries $this $_})
-$ll109drwuza2v.Add_Click({save_alertDef $this $_})
-$ll109drw7h7g3.Add_Click({open_alertDef $this $_})
+$lqdz6538596bc.Add_Click({alrtDef_Clear_Entries $this $_})
+$lqdz6538607uy.Add_Click({save_alertDef $this $_})
+$lqdz6538y1xjk.Add_Click({open_alertDef $this $_})
 $EngConfGrid.Add_Initialized({eng_conf_page_load $this $_})
 $EngConfGrid.Add_Loaded({eng_conf_page_load $this $_})
 $eng_conf_save_button.Add_Click({eng_conf_save_Button $this $_})
-$ll109drx87lfm.Add_Checked({eng_excludeBox_checked $this $_})
-$ll109drx87lfm.Add_Unchecked({eng_excludeBox_unchecked $this $_})
-$ll109drxvcne6.Add_Click({testEngineCreds $this $_})
-$ll109drx3kdlu.Add_Click({openPFXFile $this $_})
-$ll109dryxo4dl.Add_Click({saveSPInformation $this $_})
-$ll109dry6pwmc.Add_Click({pfxPasswordSet $this $_})
-$ll109dry6v5sy.Add_Click({emailPasswordSet  $this $_})
-$ll109dryebh3w.Add_Click({testEmailAccount $this $_})
-$ll109drynpchc.Add_Click({saveEmailAccount $this $_})
+$lqdz6538eu0an.Add_Checked({eng_excludeBox_checked $this $_})
+$lqdz6538eu0an.Add_Unchecked({eng_excludeBox_unchecked $this $_})
+$lqdz65381fl8d.Add_Click({testEngineCreds $this $_})
+$lqdz6538yvw1t.Add_Click({openPFXFile $this $_})
+$lqdz6538hjmpc.Add_Click({saveSPInformation $this $_})
+$lqdz65386ksn8.Add_Click({pfxPasswordSet $this $_})
+$lqdz6538625bd.Add_Click({emailPasswordSet  $this $_})
+$lqdz6538dflgy.Add_Click({testEmailAccount $this $_})
+$lqdz6538lly1e.Add_Click({saveEmailAccount $this $_})
 $TasksGrid.Add_Loaded({loadTaskPage $this $_})
-$ll109drzckk1s.Add_Click({saveTask $this $_})
+$lqdz6539fetvn.Add_Click({saveTask $this $_})
+$UpdateGrid.Add_Loaded({openUpdatePage $this $_})
 $UpdateButton.Add_Click({updateButton $this $_})
 $AboutGrid.Add_Loaded({load_about $this $_})
 
@@ -1083,7 +1084,7 @@ function FillDataContext($props){
 $DataObject =  ConvertFrom-Json @"
 
 {
-    "tabIndex" : "0",
+    "tabIndex" : "6",
     "EngConfDefaultEmail" : "",
     "EngConfExcludeExpired" : "",
     "ExcludeExpiredCheckBox" : "",
@@ -1097,7 +1098,7 @@ $DataObject =  ConvertFrom-Json @"
     "IntOwnerNote" : "",
     "ExtOwnerNote" : "",
     "Alrt_Def_Output" : "",
-    "CredsTabIndex" : "0",
+    "CredsTabIndex" : "2",
     "Configurator_Ver" : "",
     "Engine_Ver" : "",
     "PFX_Location" : "File Location:",
@@ -1131,42 +1132,42 @@ FillDataContext @("tabIndex","EngConfDefaultEmail","EngConfExcludeExpired","Excl
 
 $Window.DataContext = $DataContext
 Set-Binding -Target $ParentTabControl -Property $([System.Windows.Controls.TabControl]::SelectedIndexProperty) -Index 0 -Name "tabIndex"  
-Set-Binding -Target $ll109drv9uuoy -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 10 -Name "SPName"  
-Set-Binding -Target $ll109drvg88ym -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 9 -Name "SpNote"  
-Set-Binding -Target $ll109drvzqy0b -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 7 -Name "AlrtDefXMail"  
-Set-Binding -Target $ll109drv8yc84 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 8 -Name "AlrtDefXNote"  
-Set-Binding -Target $ll109drwtxu88 -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 13 -Name "Alrt_Def_Output"  
-Set-Binding -Target $ll109drws677h -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 11 -Name "IntOwnerNote"  
-Set-Binding -Target $ll109drwvgvr5 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 12 -Name "ExtOwnerNote"  
-Set-Binding -Target $ll109drwjb0l3 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 1 -Name "EngConfDefaultEmail"  
-Set-Binding -Target $ll109drw110lp -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 4 -Name "EngConfExpireWithin"  
-Set-Binding -Target $ll109drxo3hdg -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 5 -Name "EngConfReportName"  
-Set-Binding -Target $ll109drx87lfm -Property $([System.Windows.Controls.CheckBox]::IsCheckedProperty) -Index 3 -Name "ExcludeExpiredCheckBox"  
+Set-Binding -Target $lqdz6538i3o5f -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 10 -Name "SPName"  
+Set-Binding -Target $lqdz6538zvwox -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 9 -Name "SpNote"  
+Set-Binding -Target $lqdz6538a81wr -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 7 -Name "AlrtDefXMail"  
+Set-Binding -Target $lqdz6538u0xsb -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 8 -Name "AlrtDefXNote"  
+Set-Binding -Target $lqdz653839nyj -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 13 -Name "Alrt_Def_Output"  
+Set-Binding -Target $lqdz6538ea67r -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 11 -Name "IntOwnerNote"  
+Set-Binding -Target $lqdz6538hsdz1 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 12 -Name "ExtOwnerNote"  
+Set-Binding -Target $lqdz6538zeufi -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 1 -Name "EngConfDefaultEmail"  
+Set-Binding -Target $lqdz6538vh6tn -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 4 -Name "EngConfExpireWithin"  
+Set-Binding -Target $lqdz6538wq570 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 5 -Name "EngConfReportName"  
+Set-Binding -Target $lqdz6538eu0an -Property $([System.Windows.Controls.CheckBox]::IsCheckedProperty) -Index 3 -Name "ExcludeExpiredCheckBox"  
 Set-Binding -Target $Eng_Conf_Save_output -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 6 -Name "Eng_Save_Output"  
-Set-Binding -Target $ll109drx5o4wv -Property $([System.Windows.Controls.TabControl]::SelectedIndexProperty) -Index 14 -Name "CredsTabIndex"  
-Set-Binding -Target $ll109drxu9xd9 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 19 -Name "SP_AppID"  
-Set-Binding -Target $ll109drx2mms0 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 20 -Name "SP_TennantID"  
-Set-Binding -Target $ll109drx0ffci -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 21 -Name "Cert_Thumbprint"  
-Set-Binding -Target $ll109drycillc -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 17 -Name "PFX_Location"  
-Set-Binding -Target $ll109dry18853 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 18 -Name "SP_Page_Output"  
-Set-Binding -Target $ll109drypcuax -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 23 -Name "EmailAddFrom"  
+Set-Binding -Target $lqdz6538ui0nq -Property $([System.Windows.Controls.TabControl]::SelectedIndexProperty) -Index 14 -Name "CredsTabIndex"  
+Set-Binding -Target $lqdz6538mgwwn -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 19 -Name "SP_AppID"  
+Set-Binding -Target $lqdz6538ncrbo -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 20 -Name "SP_TennantID"  
+Set-Binding -Target $lqdz65388pieb -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 21 -Name "Cert_Thumbprint"  
+Set-Binding -Target $lqdz6538tagm3 -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 17 -Name "PFX_Location"  
+Set-Binding -Target $lqdz6538nvblg -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 18 -Name "SP_Page_Output"  
+Set-Binding -Target $lqdz6538ewjc6 -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 23 -Name "EmailAddFrom"  
 Set-Binding -Target $Test_Address -Property $([System.Windows.Controls.TextBox]::TextProperty) -Index 24 -Name "TestEmailAdd"  
 Set-Binding -Target $EmailAccount_Output -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 25 -Name "EmailAccount_Output"  
-Set-Binding -Target $ll109drycmcas -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 26 -Name "HourComboBox"  
-Set-Binding -Target $ll109drycmcas -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 28 -Name "SelectedHour"  
-Set-Binding -Target $ll109drylftoy -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 29 -Name "SelectedTOD"  
-Set-Binding -Target $ll109drylftoy -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 27 -Name "HourAMPM"  
-Set-Binding -Target $ll109dryt7xcd -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 30 -Name "RunDay"  
-Set-Binding -Target $ll109dryt7xcd -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 31 -Name "SelectedRunDay"  
-Set-Binding -Target $ll109drzzbkrk -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 32 -Name "Tasks_Output"  
+Set-Binding -Target $lqdz6539zcir2 -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 26 -Name "HourComboBox"  
+Set-Binding -Target $lqdz6539zcir2 -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 28 -Name "SelectedHour"  
+Set-Binding -Target $lqdz6539laahl -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 29 -Name "SelectedTOD"  
+Set-Binding -Target $lqdz6539laahl -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 27 -Name "HourAMPM"  
+Set-Binding -Target $lqdz6539f2zzy -Property $([System.Windows.Controls.ComboBox]::ItemsSourceProperty) -Index 30 -Name "RunDay"  
+Set-Binding -Target $lqdz6539f2zzy -Property $([System.Windows.Controls.ComboBox]::SelectedValueProperty) -Index 31 -Name "SelectedRunDay"  
+Set-Binding -Target $lqdz6539kygzj -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 32 -Name "Tasks_Output"  
 Set-Binding -Target $InstalledVersionConfig -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 15 -Name "Configurator_Ver"  
-Set-Binding -Target $ll109drzaoj7v -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 35 -Name "AvailWebConfVer"  
-Set-Binding -Target $ll109drz5e0t1 -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 16 -Name "Engine_Ver"  
-Set-Binding -Target $ll109drzszl76 -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 34 -Name "AvailWebEngVer"  
-Set-Binding -Target $ll109drzb4dul -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 33 -Name "Update_Output"  
-Set-Binding -Target $ll109drzb4dul -Property $([System.Windows.Controls.TextBlock]::BackgroundProperty) -Index 36 -Name "UpdateHeaderColor"  
-Set-Binding -Target $ll109drzhq8pn -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 15 -Name "Configurator_Ver"  
-Set-Binding -Target $ll109drzu2qfy -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 16 -Name "Engine_Ver"  
+Set-Binding -Target $lqdz6539t91vh -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 35 -Name "AvailWebConfVer"  
+Set-Binding -Target $lqdz6539tbccx -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 16 -Name "Engine_Ver"  
+Set-Binding -Target $lqdz65390e8dx -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 34 -Name "AvailWebEngVer"  
+Set-Binding -Target $lqdz6539o3fsi -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 33 -Name "Update_Output"  
+Set-Binding -Target $lqdz6539o3fsi -Property $([System.Windows.Controls.TextBlock]::BackgroundProperty) -Index 36 -Name "UpdateHeaderColor"  
+Set-Binding -Target $lqdz65396yoyy -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 15 -Name "Configurator_Ver"  
+Set-Binding -Target $lqdz6539wmb4w -Property $([System.Windows.Controls.TextBlock]::TextProperty) -Index 16 -Name "Engine_Ver"  
 
 
 
@@ -1235,3 +1236,5 @@ Start-RunspaceTask $JobCleanupScript @([PSObject]@{ Name='Jobs' ; Variable=$Jobs
 
 
 $Window.ShowDialog()
+
+
