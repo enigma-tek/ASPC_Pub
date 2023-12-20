@@ -225,17 +225,17 @@ Function Check_JSON_Notes_Expiring {
                     }
               }
        }
-       $GetUniqueEntries = $Global:ExpireKeysCertsSoon | Sort-Object DisplayName | Get-Unique -AsString
+       $GetUniqueEntries = $Global:ExpireKeysCertsSoon | Sort-Object DisplayName -Unique
        foreach($AlrtDefXmail in $GetUniqueEntries) {
                 $ListNoteFilesXmail = (Get-Childitem "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\").BaseName
                 $CompareNamesXmail = Compare-Object -ReferenceObject $AlrtDefXmail.DisplayName -DifferenceObject $ListNoteFilesXmail -IncludeEqual
                 foreach($CompNameXmail in $CompareNamesXmail) {
                     If($CompNameXmail.SideIndicator -eq "==" -AND $AlrtDefXmail.DaystoExpire -le '15') {
                         $SPFinNameXmail = $CompNameXmail.InputObject
+                        $Global:XmailSPNameSubj = $SPFinNameXmail
                         $SPFinNameInfoXmail = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinNameXmail.json" | ConvertFrom-Json -Verbose
                         $Global:ExternalMailAddr = $SPFinNameInfoXmail.ExternalAlertMailAddr
-                        $Global:ExternalMailNote = "The Service Principal is $Global:SPNameForMail"
-						$Global:ExternalMailNote += "Notes: $SPFinNameInfoXmail.ExternalAlertMailNote"
+						$Global:ExternalMailNote = "Service Principal $Global:XmailSPNameSubj has One or More Expiring keys/Certs. Notes: $($SPFinNameInfoXmail.ExternalAlertMailNote)"
                         Mail_Handler_Secondary
                 }
             }
@@ -503,7 +503,7 @@ Function Mail_Handler_Secondary {
                         Credential          = $credential
                         From                = $Plainmailuser
                         To                  = $DefEmX
-                        Subject             = 'CSS - Expiring Service Principal Information'
+                        Subject             = "CSS - Service Principal $Global:XmailSPNameSubj"
                         Body                = $Global:ExternalMailNote
                     }
         
