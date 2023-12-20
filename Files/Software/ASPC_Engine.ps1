@@ -1,4 +1,4 @@
-#ASPC engine. 
+#ASPC engine Version 1.1.2
 
 
 #-------Define Variables (outside Engine Config File)-------
@@ -213,6 +213,7 @@ Function Check_JSON_Notes_Expiring {
                 foreach($CompName in $CompareNames) {
                     If($CompName.SideIndicator -eq "==") {
                         $SPFinName = $CompName.InputObject
+						$Global:SPNameForMail = $SPFinName
                         $SPFinNameInfo = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinName.json" | ConvertFrom-Json -Verbose
                         $SPNotes = $SPFinNameInfo.SPNotes
 						$InternalNotes = $SPFinNameInfo.IntOwner
@@ -233,7 +234,8 @@ Function Check_JSON_Notes_Expiring {
                         $SPFinNameXmail = $CompNameXmail.InputObject
                         $SPFinNameInfoXmail = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinNameXmail.json" | ConvertFrom-Json -Verbose
                         $Global:ExternalMailAddr = $SPFinNameInfoXmail.ExternalAlertMailAddr
-                        $Global:ExternalMailNote = $SPFinNameInfoXmail.ExternalAlertMailNote
+                        $Global:ExternalMailNote = "The Service Principal is $Global:SPNameForMail"
+						$Global:ExternalMailNote += "Notes: $SPFinNameInfoXmail.ExternalAlertMailNote"
                         Mail_Handler_Secondary
                 }
             }
