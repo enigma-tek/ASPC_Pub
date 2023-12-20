@@ -213,7 +213,7 @@ Function Check_JSON_Notes_Expiring {
                 foreach($CompName in $CompareNames) {
                     If($CompName.SideIndicator -eq "==") {
                         $SPFinName = $CompName.InputObject
-                        $SPFinNameInfo = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinName" | ConvertFrom-Json -Verbose
+                        $SPFinNameInfo = Get-content "C:\Program Files\Enigma-Tek\ASPC\Configs\AlertDefs\$SPFinName.json" | ConvertFrom-Json -Verbose
                         $SPNotes = $SPFinNameInfo.SPNotes
 						$InternalNotes = $SPFinNameInfo.IntOwner
 						$ExternalNotes = $SPFinNameInfo.ExtOwner
